@@ -1,5 +1,5 @@
-export type {ITodo} from './model/todo.ts';
-export {getPageTodos} from './queries/read.ts';
-export {addTodo} from './queries/create.ts';
-export {updateTodo} from './queries/update.ts';
-export {deleteTodo} from './queries/delete.ts';
+export type {ITodo} from './model/todo';
+export {getPageTodosThunk} from './queries/read.ts';
+export {addTodoThunk} from './queries/create.ts';
+export {updateTodoThunk} from './queries/update.ts';
+export {deleteTodoThunk} from './queries/delete.ts';

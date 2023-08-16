@@ -11,6 +11,8 @@
     "paths": {
       "app/*": ["app/*"],
       "pages/*": ["pages/*"],
+      "entities/*": ["entities/*"],
+      "shared/*": ["shared/*"],
     },
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
