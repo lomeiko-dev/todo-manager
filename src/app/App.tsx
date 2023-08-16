@@ -3,10 +3,10 @@ import {wrap} from "./prodivers";
 import {AppRouting} from "./routing";
 
 const App = () => {
-  return (
-    <>
-        <AppRouting/>
-    </>
+    return (
+        <>
+            <AppRouting/>
+        </>
   )
 }
 
