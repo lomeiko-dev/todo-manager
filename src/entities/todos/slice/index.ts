@@ -21,7 +21,7 @@ const todosSlice = createSlice({
         }).addCase(getPageTodosThunk.fulfilled, (state, action: PayloadAction<ITodo[]>) => {
             state.todos = action.payload;
         }).addCase(getPageTodosThunk.rejected, (state, action) => {
-            state.error = action.payload;
+            state.error = action.error.message;
         })
     }
 });

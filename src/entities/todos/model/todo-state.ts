@@ -5,5 +5,5 @@ export interface ITodoState {
     textboxDescription: string,
     todos: ITodo[],
     status: string,
-    error: string,
+    error: string | undefined,
 }
