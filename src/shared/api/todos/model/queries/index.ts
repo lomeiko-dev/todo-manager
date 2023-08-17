@@ -1,12 +1,20 @@
-import {ITodo} from "shared/api/todos/model/todo";
+import {ITodo} from "../todo";
+import {AxiosResponse} from "axios";
 
 export interface IModelGetPageTodos {
-    start: number,
-    end: number,
+    (start: number, end: number): Promise<AxiosResponse<ITodo[]>>
+}
+export interface IModelCreateTodo {
+    (data: ITodo): Promise<AxiosResponse<ITodo>>
+}
+export interface IModelUpdateTodo {
+    (newData: ITodo, id: Pick<ITodo, "id">): Promise<AxiosResponse<ITodo>>
 }
 
-export interface IModelUpdateTodo extends Pick<ITodo, "id">{
-    newData: ITodo
+export interface IModelDeleteTodo {
+    (id: Pick<ITodo, "id">) : Promise<AxiosResponse<ITodo>>
 }
 
-export interface IModelDeleteTodo extends Pick<ITodo, "id">{}
+export interface IModelGetTodo {
+    (id: Pick<ITodo, "id">) : Promise<AxiosResponse<ITodo>>
+}

@@ -1,5 +1,4 @@
 import {RouteProps} from "react-router-dom";
-import {routePaths} from "../../../shared/config/routing-config";
 import {TodosPage} from "pages/todos";
 import {TodoPage} from "pages/todo";
 
